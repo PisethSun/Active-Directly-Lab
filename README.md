@@ -29,3 +29,20 @@ Create a Domain Controller - This VM will be running on Windows Server 2022
 - Log in DC-1 : Search wf.msc ( window firewall)
     - Click on Inbound Rule - Enable - ICMP echo Request IPV4
     <img src="images/Inbound_rules.png" alt="enable rules pic" >
+- Check Client-1 cmd - You will see ping is now working. 
+
+<h2>Step 4: Install Domain Services on DC-1 machine </h2>
+    - On Windows server - click "Add Roles adn Features"
+<img src="images/AD_services.png" alt="ad services " >
+    - Once AD services installed - Click on the Flag upper right corner of the page -> Click Refresh -> Click "Promote This Server in to Domain Controller"
+
+<h2>Step 5: Create Forest </h2>
+
+<img src="images/Pisethdomain.com.png" alt="Piseth Domain Pic
+ " >
+ - Set Password for you domain/Forest
+ <img src="images/set_pw.png" alt="Piseth Domain Pic
+ " >
+ - Click NEXT until you see Install- and Wait for it to complete install
+ - RDP - should disconnected - Let it run 2-3 mins -> Restart DC-1
+ - Log in again with RDP CREDIENTIALS
