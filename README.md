@@ -20,3 +20,5 @@ Leave the subnet same and the rest are default
 - Make sure THE Region of the DC-01 and Client-01  in the same region and resource group and Vnet ( Double check virtual network /subnet of both machine are the same).
 
 Step 3: Allowed CSMP Protocol for both machine
+
+- Log in to Client01 and ping DC-1 IP with -t(while loop ping )
